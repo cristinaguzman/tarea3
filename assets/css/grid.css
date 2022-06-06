@@ -1,0 +1,160 @@
+@charset "UTF-8";
+body {
+  font-family: Arial;
+  font-size: 24px;
+  color: #877CB1;
+}
+
+h1 {
+  text-align: center;
+  color: #4F4F52;
+}
+
+h2 {
+  text-align: center;
+  color: #4F4F52;
+}
+
+#page {
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-areas: "head head" "nav  main" "nav  foot";
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 150px 1fr;
+}
+
+#page > header {
+  grid-area: head;
+  height: 200px;
+  background-color: #8ca0ff;
+}
+
+#page > nav {
+  grid-area: nav;
+  background-color: #ffa08c;
+}
+
+#page > main {
+  grid-area: main;
+  background-color: #ffff64;
+}
+
+#page > footer {
+  grid-area: foot;
+  background-color: #8cffa0;
+}
+
+.header__container {
+  display: flex;
+  background-color: #724d00;
+  justify-content: space-between;
+}
+
+.header__container__logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header__container__logo img {
+  max-width: 105px;
+  margin-right: 15px;
+}
+
+.header__container__logo a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header__container button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header__container button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    background-color: #0f0f35;
+    border: none;
+    color: #fff;
+  }
+}
+.header__container__list {
+  display: flex;
+  list-style: none;
+  align-items: stretch;
+  margin-right: 30px;
+}
+
+.header__container__list li {
+  padding: 0 15px;
+  padding-top: 35px;
+}
+
+.header__container__list li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header__container__list li:hover {
+  background-color: #00B2BF;
+}
+
+.header__container__list li:hover a {
+  background-color: #00B2BF;
+}
+
+.footer {
+  background-color: #724d00;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.footer__box-item {
+  color: #ffffff;
+  text-align: center;
+  padding: 35px;
+  border-right: 1px solid #efefef;
+}
+
+.footer__box-item:last-child {
+  border: none;
+}
+
+.footer__box-item i {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.footer__box-item__title {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.footer__box-item__description {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: block;
+    border: none;
+  }
+
+  .footer__box-item {
+    border: none;
+  }
+}
+/* Cuando tenga el ancho de 640 px, que se visualize en una sola columna los bloques de mi Pagina Wéb  */
+/* Que se visualize en una sola columna los bloques de mi Pagina Wéb */
+
+/*# sourceMappingURL=grid.css.map */
